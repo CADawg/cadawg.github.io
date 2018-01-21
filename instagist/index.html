@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script>
+var gitout;
+function sendToGit() {
+var txtText = $("#textBox").text();
+	var JSONy = {"description": "Gist Created Using Snaddyvitch-Dispenser's niedx.tlmh","public": true,"files": {"created-with-niedx.tlmh": {"content": txtText}}}
+
+gitout = $.post("https://api.github.com/gists",JSON.stringify(JSONy));
+
+};
+
+function latestGist() {
+	var win = window.open(gitout["responseJSON"]["html_url"], '_blank');win.focus();
+};
+</script>
+
+</head>
+
+<style>
+.p {border-bottom: 1px solid black;}
+.p:focus {outline: 0;}
+a {text-decoration: none;}
+p.nicebtn:hover {width: 50px; text-align: center; box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.2); background-color: rgba(0,0,0,0.2); margin-left: -3.5px;}
+</style>
+
+<body>
+<div class="w3-bar w3-black w3-mobile">
+  <a class="w3-bar-item w3-button w3-mobile">JustType</a>
+</div>
+<div id="0" class="copy">
+<div class="w3-container w3-content">
+ <div class="w3-panel w3-white w3-card w3-display-container">
+   <p class="w3-text-grey"><b>Type Here:</b></p>
+   <p contenteditable class="p" id="textBox"></p>
+   <a onclick="sendToGit();"><p class="w3-text-blue nicebtn">SEND</p></a>
+   <a href="#" onclick="latestGist();">Go To Gist!</a>
+ </div>
+</div>
+
+</body>
+</html>
