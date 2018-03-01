@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/cadawg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://snaddyvitch-dispenser.github.io
+  * I am cadawg (https://keybase.io/cadawg) on keybase.
+  * I have a public key ASBKuCVupxGQqpbte4E7EirWDDtVerBJjpnLBCXeKZInkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204ab8256ea71190aa96ed7b813b122ad60c3b557ab0498e99cb0425de299227910a",
+      "host": "keybase.io",
+      "kid": "01204ab8256ea71190aa96ed7b813b122ad60c3b557ab0498e99cb0425de299227910a",
+      "uid": "bf4df1c6d233604a15f07a4b6ec71e19",
+      "username": "cadawg"
+    },
+    "merkle_root": {
+      "ctime": 1519905981,
+      "hash": "d29d121ee2736036d90eaaf72dca0c4241077aa6ca5009cdd8113cf4150dc2147c785bbd0a9f95be87b35f395d0deac903f4ddcb41834315911b254d262af8f1",
+      "hash_meta": "1070f4293b8f2b00cff4ad387b8a33eabe5090761cd2d78c0a266813fe7f6479",
+      "seqno": 2170740
+    },
+    "service": {
+      "hostname": "snaddyvitch-dispenser.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.44"
+  },
+  "ctime": 1519906053,
+  "expire_in": 504576000,
+  "prev": "e28b2863818b5a7b885f9805e0bb40291abca5040d69c21a465d4c188db51413",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSrglbqcRkKqW7XuBOxIq1gw7VXqwSY6ZywQl3imSJ5EKp3BheWxvYWTFA1V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNGFiODI1NmVhNzExOTBhYTk2ZWQ3YjgxM2IxMjJhZDYwYzNiNTU3YWIwNDk4ZTk5Y2IwNDI1ZGUyOTkyMjc5MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGFiODI1NmVhNzExOTBhYTk2ZWQ3YjgxM2IxMjJhZDYwYzNiNTU3YWIwNDk4ZTk5Y2IwNDI1ZGUyOTkyMjc5MTBhIiwidWlkIjoiYmY0ZGYxYzZkMjMzNjA0YTE1ZjA3YTRiNmVjNzFlMTkiLCJ1c2VybmFtZSI6ImNhZGF3ZyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxOTkwNTk4MSwiaGFzaCI6ImQyOWQxMjFlZTI3MzYwMzZkOTBlYWFmNzJkY2EwYzQyNDEwNzdhYTZjYTUwMDljZGQ4MTEzY2Y0MTUwZGMyMTQ3Yzc4NWJiZDBhOWY5NWJlODdiMzVmMzk1ZDBkZWFjOTAzZjRkZGNiNDE4MzQzMTU5MTFiMjU0ZDI2MmFmOGYxIiwiaGFzaF9tZXRhIjoiMTA3MGY0MjkzYjhmMmIwMGNmZjRhZDM4N2I4YTMzZWFiZTUwOTA3NjFjZDJkNzhjMGEyNjY4MTNmZTdmNjQ3OSIsInNlcW5vIjoyMTcwNzQwfSwic2VydmljZSI6eyJob3N0bmFtZSI6InNuYWRkeXZpdGNoLWRpc3BlbnNlci5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC40NCJ9LCJjdGltZSI6MTUxOTkwNjA1MywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJlMjhiMjg2MzgxOGI1YTdiODg1Zjk4MDVlMGJiNDAyOTFhYmNhNTA0MGQ2OWMyMWE0NjVkNGMxODhkYjUxNDEzIiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAUu7p4oZJgfEB/mNw55C7sWIpJ/LQ7CK+EswU4tO5dpxB8kxXLiU31n/zrarkSxfOA3eyvDSpvUoRgAAS1OrhAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICwJWiWNYeWh/77iSU0llVjBicTLN0q2TCcrZ9OcFCFso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cadawg
+
+==================================================================
