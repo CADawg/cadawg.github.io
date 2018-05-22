@@ -14,8 +14,3 @@ body {
 .center {
     text-align: center;
 }
-
-ul {
-    list-style-type: circle !important;
-    list-style-position: outside;
-}
