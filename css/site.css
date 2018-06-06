@@ -1,0 +1,121 @@
+*, *::after, *::before {
+	box-sizing: border-box
+}
+
+html {
+	min-height: 100vh
+}
+
+body {
+	background: #f8f9fa;
+	color: #000;
+	font: 1rem roboto, arial, sans-serif;
+	font-weight: normal;
+	height: 100%;
+	margin: 0
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	margin: 0
+}
+
+ul {
+	margin: 0
+}
+
+li {list-style: none}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+.nav {
+	background: #171a21;
+	padding: 1rem
+}
+
+.nav ul {
+	display: flex;
+	padding: 0
+}
+
+.nav a {
+	color: #6c757d;
+	margin-right: 1rem
+}
+
+.nav a:hover {
+	color: #fff
+}
+
+.wrapper {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 6px 12px 0 #cdcdcd;
+	margin: 3rem auto;
+	max-width: 80rem;
+	padding: 1rem 1.5rem
+}
+
+.title > h2 {
+	font-size: 3rem;
+	margin: 2rem 0;
+	text-align: center
+}
+
+header > h3 {
+	font-size: 2rem;
+	margin: 1rem 0;
+	text-align: left
+}
+
+.group h3 {
+	font-size: 1.75rem;
+	margin: .5rem 0
+}
+
+.group h4 {
+	font-size: 1.5rem;
+}
+
+.group h5 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-top: .5rem;
+}
+
+.group a {
+	color: #007bff
+}
+
+.group a:hover {
+	color: #69aff9
+}
+
+.list {
+	margin: .5rem 0
+}
+
+.list li {
+	list-style: circle
+}
+
+.group.event {
+	border: 1px solid #cdcdcd;
+	box-shadow: inset 0 0 3px 0 #cdcdcd;
+	padding: 1rem;
+	margin-bottom: 1rem
+}
+
+.group.event h4 {color: #007bff}
+
+/*Grades*/
+.grade-a {color: #28a745}
+
+.grade-b {color: #ffc107}
