@@ -25,11 +25,18 @@ $("<link/>", {
 $("#gdpr-hello").ready(function(e) {
 setTimeout(function() {
     if (getCookie("likescookies") == null) {
-        $("#gdpr-hello").show();
+        gdprUnfriendlyCode();
     }
     }, 1);
 });
 
+$("#gdpr-hello").ready(function(e) {
+setTimeout(function() {
+    if (getCookie("likescookies") == null) {
+        
+    }
+    }, 1);
+});
 
 function getCookie(name) {
         var dc = document.cookie;
