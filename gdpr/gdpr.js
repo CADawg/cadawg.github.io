@@ -22,18 +22,12 @@ $("<link/>", {
     
 });
 
-$("#gdpr-hello").ready(function(e) {
+$("#gdpr-hello").ready(function() {
 setTimeout(function() {
     if (getCookie("likescookies") == null) {
+        $("#gdpr-hello").show();
+    } else if (getCookie("likescookies") == 1) {
         gdprUnfriendlyCode();
-    }
-    }, 1);
-});
-
-$("#gdpr-hello").ready(function(e) {
-setTimeout(function() {
-    if (getCookie("likescookies") == null) {
-        
     }
     }, 1);
 });
