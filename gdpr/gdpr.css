@@ -8,11 +8,11 @@
     box-sizing: border-box;
     background: #D5DFE9;
     font-family: Ubuntu, Arial, Sans-Serif;
-    color: white;
+    color: black;
 }
 
 .banner-bottom a {
-    color: white;
+    color: black;
 }
 
 .banner-bottom .right {
