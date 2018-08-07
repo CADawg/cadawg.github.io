@@ -24,7 +24,6 @@ $("<link/>", {
 
 $("#gdpr-hello").ready(function() {
 setTimeout(function() {
-   var gdpr_opts = ["1","2","12"];
     console.log(getCookie("likescookies"))
     if (getCookie("likescookies") == null) {
         $("#gdpr-hello").show();
@@ -33,6 +32,10 @@ setTimeout(function() {
     }
     }, 1);
 });
+
+function gdprUnfriendlyCode() {
+    
+};
 
 function getCookie(name) {
   var value = "; " + document.cookie;
