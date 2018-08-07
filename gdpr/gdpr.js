@@ -24,51 +24,35 @@ $("<link/>", {
 
 $("#gdpr-hello").ready(function() {
 setTimeout(function() {
-   var gdpr_opts = [1,2,12];
+   var gdpr_opts = ["1","2","12"];
+    console.log(getCookie("likescookies"))
     if (getCookie("likescookies") == null) {
         $("#gdpr-hello").show();
-    } else if (gdpr_opts.includes(getCookie("likescookies"))) {
+    } else {
         gdprUnfriendlyCode(getCookie("likescookies"));
     }
     }, 1);
 });
 
 function getCookie(name) {
-        var dc = document.cookie;
-        var prefix = name + "=";
-        var begin = dc.indexOf("; " + prefix);
-        if (begin == -1) {
-            begin = dc.indexOf(prefix);
-            if (begin != 0) return null;
-        }
-        else
-        {
-            begin += 2;
-            var end = document.cookie.indexOf(";", begin);
-            if (end == -1) {
-            end = dc.length;
-            }
-        }
-        return decodeURI(dc.substring(begin + prefix.length, end));
-    } 
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
 
     function screwIt() {
         var expiryDate = new Date();
         expiryDate.setMonth(expiryDate.getMonth() + 1);
-        document.cookie = "likescookies=12; expires=" + expiryDate.toGMTString(); + "; path=/";
+        document.cookie = "likescookies=G12; expires=" + expiryDate.toGMTString(); + "; path=/";
         $("#gdpr-hello").hide();
-        gdprUnfriendlyCode("12");
-    }
-
-    function gdprUnfriendlyCode(allows = null) {
-        //Code Here!
+        gdprUnfriendlyCode("G12");
     }
 
     function takeSelected() {
         if($("#gdpr-cookies-social").is(":checked") || $("#gdpr-cookies-analytics").is(":checked")) {
             var expiryDate = new Date();
             expiryDate.setMonth(expiryDate.getMonth() + 1);
-            var cookiable = "";
+            var cookiable = "G";
             if ($("#gdpr-cookies-social").is(":checked")) {cookiable += "1"}
             if ($("#gdpr-cookies-analytics").is(":checked")) {cookiable += "2"}
             document.cookie = "likescookies=" + cookiable + "; expires=" + expiryDate.toGMTString(); + "; path=/";
