@@ -24,7 +24,7 @@ $("<link/>", {
 
 $("#gdpr-hello").ready(function() {
 setTimeout(function() {
-    console.log(getCookie("likescookies"))
+    console.log(getCookie("likescookies"));
     if (getCookie("likescookies") == null) {
         $("#gdpr-hello").show();
     } else {
