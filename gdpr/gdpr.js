@@ -1,5 +1,5 @@
 $(document).ready(function() {
-var mystuff = $('<div class="gdpr-overlay" style="display: none;"><div class="conors-crunchy-cookie-options" ><h1>Cookie Options:</h1><p><a class="unwanted" href="https://cookies.insites.com/">What are cookies?</a> <a class="unwanted" href="/Pages/cookie.html">Cookie Policy</a></p><p class="disabled"><input type="checkbox" checked="checked" disabled> Required Cookies</p><p><input type="checkbox" id="gdpr-cookies-social" checked="checked"> Social Cookies</p><p><a class="modal" onclick="screwIt(); $(this).parent().parent().parent().hide();">Accept All &amp; Continue</a></p><p><a class="unwanted" onclick="takeSelected();">Save Preferences</a></p><p class="small watermark">SimplyGDPR by Conor Howland</p></div></div>');
+var mystuff = $('<div class="gdpr-overlay" style="display: none;"><div class="conors-crunchy-cookie-options" ><h1>Cookie Options:</h1><p><a class="unwanted" href="https://cookies.insites.com/">What are cookies?</a> <a class="unwanted" href="/Pages/cookie.html">Cookie Policy</a></p><p class="disabled"><input type="checkbox" checked="checked" disabled> Required Cookies</p><p><input type="checkbox" id="gdpr-cookies-social" checked="checked"> Social Cookies</p><p><input type="checkbox" id="gdpr-cookies-analytics" checked="checked"> Analytical Cookies</p><p><a class="modal" onclick="screwIt(); $(this).parent().parent().parent().hide();">Accept All &amp; Continue</a></p><p><a class="unwanted" onclick="takeSelected();">Save Preferences</a></p><p class="small watermark">SimplyGDPR by Conor Howland</p></div></div>');
 
 var mystuff2 = $('<div class="banner-bottom" id="gdpr-hello" style="display: none;"><p>This Site Uses Cookies to bring you this service and make this more interactive! &middot; <a  href="#" onclick="$(\'.gdpr-overlay\').css(\'display\',\'flex\');">Learn More</a></p><p class="right"><a class="button" onclick="screwIt();">Got It!</a></p></div>');
 
@@ -24,10 +24,11 @@ $("<link/>", {
 
 $("#gdpr-hello").ready(function() {
 setTimeout(function() {
+   var gdpr_opts = [1,2,12];
     if (getCookie("likescookies") == null) {
         $("#gdpr-hello").show();
-    } else if (getCookie("likescookies") == 1) {
-        gdprUnfriendlyCode();
+    } else if (gdpr_opts.includes(getCookie("likescookies"))) {
+        gdprUnfriendlyCode(getCookie("likescookies"));
     }
     }, 1);
 });
@@ -54,23 +55,26 @@ function getCookie(name) {
     function screwIt() {
         var expiryDate = new Date();
         expiryDate.setMonth(expiryDate.getMonth() + 1);
-        document.cookie = "likescookies=1; expires=" + expiryDate.toGMTString(); + "; path=/";
+        document.cookie = "likescookies=12; expires=" + expiryDate.toGMTString(); + "; path=/";
         $("#gdpr-hello").hide();
-        gdprUnfriendlyCode();
+        gdprUnfriendlyCode("12");
     }
 
-    function gdprUnfriendlyCode() {
+    function gdprUnfriendlyCode(allows = null) {
         //Code Here!
     }
 
     function takeSelected() {
-        if($("#gdpr-cookies-social").is(":checked")) {
+        if($("#gdpr-cookies-social").is(":checked") || $("#gdpr-cookies-analytics").is(":checked")) {
             var expiryDate = new Date();
             expiryDate.setMonth(expiryDate.getMonth() + 1);
-            document.cookie = "likescookies=1; expires=" + expiryDate.toGMTString(); + "; path=/";
+            var cookiable = "";
+            if ($("#gdpr-cookies-social").is(":checked")) {cookiable += "1"}
+            if ($("#gdpr-cookies-analytics").is(":checked")) {cookiable += "2"}
+            document.cookie = "likescookies=" + cookiable + "; expires=" + expiryDate.toGMTString(); + "; path=/";
             $("#gdpr-hello").hide();
             $(".gdpr-overlay").css("display","none");
-            gdprUnfriendlyCode();
+            gdprUnfriendlyCode(cookiable);
         } else {
             var expiryDate = new Date();
             expiryDate.setMonth(expiryDate.getMonth() + 1);
