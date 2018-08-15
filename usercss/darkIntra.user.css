@@ -1,0 +1,66 @@
+/**
+* Author: Snaddyvitch Dispenser
+* Author Name: Conor Howland
+* Copyright: Conor Howland 2018
+* Style: Greyscale-Dark
+* Last-Modified: 15/08/2018
+* Author URL - https://github.com/Snaddyvitch-Dispenser
+**/
+.main-content,.jumbotron {
+  background: black;
+  color: #CDCDCD;
+}
+
+#MainContent_DDYear {
+  background: #E1DEE3;
+  color: black;
+  box-shadow: inset 1px 4px 10px 1px rgba(0,0,0,0.3);
+}
+
+.footer {
+  background: #373737;
+}
+
+.footer p, .footer a, .footer i {
+  color: white;
+}
+
+.news.content a, a.acntr {
+  color: white;
+}
+
+.topbar, .erp, .central-form {
+  background: #9C9C9C;
+}
+
+.central-form label {
+  color: white;
+}
+
+.erp p {
+  color: white;
+}
+
+.navvy {
+  background: #CDCDCD;
+}
+
+table th, table td {
+  border: 1px solid gainsboro !important;
+}
+
+.news {
+  border-color: white;
+}
+
+.function, .btm, .mid {
+  border-color: white;
+}
+
+.expandable-head, .windows_ab {
+  background: #9C9C9C
+}
+
+.windows_ab {
+  border: 1px solid white;
+}
