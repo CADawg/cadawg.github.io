@@ -1,0 +1,133 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu, Arial, sans-serif;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+div.landing {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: gainsboro;
+    color: #0A1826;
+}
+
+div.projects {
+    width: 100%;
+    min-height: 100%;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: gainsboro;
+    color: #0A1826;
+}
+
+.aboutme {
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #04080D;
+    color: #E6E8E6;
+}
+
+.aboutme h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.aboutme p {
+    text-align: center;
+    line-height: 30px;
+}
+
+div.project-image {
+    height: 200px;
+    transition: all .5s;
+    background-image: url("http://via.placeholder.com/200x200");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+a.project-link {
+    color: cadetblue;
+    padding-bottom: 10px;
+}
+
+.projects-title {
+    align-self: flex-start;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+div.project:hover, div.project:focus {
+    transition: all .5s;
+    transform: scale(1.2);
+    z-index: 100;
+    border: 1px solid black;
+    background-color: gainsboro;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+div.project {
+    transition: all .5s;
+    transform: scale(1);
+    width: 200px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+div.project:last-of-type {
+    margin-right: 0;
+}
+
+.project-text {
+    padding: 0;
+    margin: 0;
+}
+
+h1.welcome {
+    font-size: 72px;
+    margin: 0;
+}
+
+p.welcome {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer {
+    color: black;
+    background: gainsboro;
+    min-height: 300px;
+}
+
+div.projects {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#cvl {
+    color: white;
+}
