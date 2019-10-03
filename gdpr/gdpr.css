@@ -24,10 +24,15 @@
 }
 
 .banner-bottom .button {
-    color: black;
-    background: yellow;
+    color: white;
+    background: #007bff;
     padding: 10px 30px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-bottom .button:first-of-type {
+    margin-right: 10px;
 }
 
 .gdpr-overlay {
@@ -43,38 +48,40 @@
     align-items: center;
 }
 
-.conors-crunchy-cookie-options {
+.crunchy-cookie-options {
     font-family: Ubuntu, Arial, Sans-Serif;
     background: white;
     color: black;
     margin: 0 auto;
     z-index: 10000;
-    padding: 50px 100px;
+    padding: 25px 50px;
     opacity: 1;
     box-shadow: 1px 4px 20px 1px rgb(0, 0, 0, 0.4);
+    border-radius: 10%;
 }
 
-.conors-crunchy-cookie-options .disabled {
+.crunchy-cookie-options .disabled {
     color: gray;
 }
 
-.conors-crunchy-cookie-options .small.watermark {
+.crunchy-cookie-options .small.watermark {
     color: rgba(0,0,0,0.5);
     font-size: 10px;
 }
 
-.conors-crunchy-cookie-options .modal {
-    background: #4BB543;
-    padding: 8px 6px;
+.crunchy-cookie-options .modal {
+    color: white;
+    background: #007bff;
+    padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.conors-crunchy-cookie-options .modal:hover {
-    background: green;
+.crunchy-cookie-options .modal:hover {
+    background: #2E93FF;
 }
 
-.conors-crunchy-cookie-options .unwanted {
+.crunchy-cookie-options .unwanted {
     color: rgba(0,0,0,0.6);
     text-decoration: underline;
     font-size: 16px;
